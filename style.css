@@ -100,7 +100,7 @@ ul{
 
 }
 
-/*
+
 .header .banner span3:hover{
 animation: coloranim 2s infinite alternate ease;
 }
@@ -151,7 +151,7 @@ animation: coloranim 2s infinite alternate ease;
     color: #77df00;
     }          
 }
-*/
+
 .banner{
     position: absolute;
     top: 35%;
