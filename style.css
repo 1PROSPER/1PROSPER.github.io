@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMG/Bg2.jpg)
+}
+.header video{
+    position: fixed;
+    align-self: center;
+    top:30%;
+    right:99%;
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    mix-blend-mode: normal;
+}
+.header .navigationBar{
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    padding-top : 20px;
+    transition: all 0.3s ease;
+}
+
+.header .navigationBar .sticky{
+    padding: 15px 0;
+    background: #1adf00;
+}
+
+
+
+.header .navigationBar .menu ul{
+    margin-left: 50px;
+
+}
+
+.header .navigationBar .menu ul li{
+    display: inline-block;
+    margin-right: 35px;
+    align-items: center;
+}
+
+.header .navigationBar .menu ul li a{
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.header .navigationBar .menu ul li a:hover{
+    color: #1adf00;
+}
+
+/* Responsive */
+
+@media (max-width: 999){
+    .max-width{
+        padding: 0 50px;
+    } 
+    .header .navigationBar .menu{
+        position: fixed;
+        height: 100vh;
+        width:100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+}
+
+.header .banner video{
+    Position: absolute;
+    left:63%;
+    top:10%;
+    height: 226px;
+    width: 270px;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+/*
+.header .banner span3:hover{
+animation: coloranim 2s infinite alternate ease;
+}
+
+@keyframes coloranim{
+0% 
+    {
+    color: white;
+    }
+10%
+    {
+    color: #1adf00;
+    }   
+20%
+    {
+    color: #00ffdd;
+    }   
+30%
+    {
+    color: #001aff;
+    }
+40%
+    {
+    color: #8400ff;
+    } 
+50%
+    {
+    color: #ff00ea;
+    }
+60%
+    {
+    color: #ff0080;
+    }
+70%
+    {
+    color: #ff0037;
+    }
+80%
+    {
+    color: #ff6600;
+    }
+90%
+    {
+    color: #b6df00;
+    }
+100%
+    {
+    color: #77df00;
+    }          
+}
+*/
+.banner{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: #fff;
+}
+
+.banner .app-text{
+    padding-left: 440px;
+
+}
+
+.banner .app-text h1{
+    font-size: 80px;
+    position: relative;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.banner .app-text span{
+    color:#1adf00;
+
+}
+
+.homeinfo{
+    background-color: rgb(30, 30, 30);
+}
+
+/*About*/
+
+.About{
+    background-color: rgb(30, 30, 30);
+}
+
+.About .title{
+    position: relative;
+    bottom: -60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.About .title::before{
+    content: "";
+    position: absolute;
+    bottom : -5px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.About .title::after{
+    content: "Who am I";
+    position: absolute;
+    bottom : -20px;
+    left: 50%;
+    font-size: 20px;
+    color: #1adf00;
+    padding: 5px;
+    background-color: rgb(30, 30, 30);
+    transform: translateX(-50%);
+}
+
+.About .About-content{
+    justify-content: space-between;
+}
+
+.About .About-content .left img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    left: 30px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.About .About-content .left img:hover{
+    transform: scale(1.2) infinite;
+}
+
+.About .About-content:hover .left img{
+    transform: scale(1.2);
+}
+
+.About .text{
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    display:inline-block;
+    text-align: justify;
+}
+.About .text span{
+    color: #1adf00;
+}
+
+/* resume */
+
+.Resume{
+    background-image: url(IMG/Bg2.jpg);
+    color: #fff;
+    width:100%;
+}
+
+.Resume .res content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.Resume .title{
+    position: relative;
+    bottom: -60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.Resume .title::before{
+    content: "";
+    position: absolute;
+    bottom : -5px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.Resume .title::after{
+    content: "What I can do";
+    position: absolute;
+    bottom : -20px;
+    left: 50%;
+    font-size: 20px;
+    color: #1adf00;
+    padding: 5px;
+    background-color: rgb(30,30,30);
+    transform: translateX(-50%);
+}
+
+.Resume .res-content .card{
+    margin-left: 72px;
+    margin-bottom: 120px;
+    margin-top: 70px;
+    width: 300px;
+    height: 220px;
+    background-color: #222;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Resume .res-content .card p{
+    font-size: 15px;
+}
+
+.Resume .res-content .card i{
+    font-size: 55px;
+    color:rgb(90, 120, 90);
+    transition: 1s;
+}
+
+.Resume .res-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.Resume .res-content .card{
+    transition: all 0.4s ease;
+}
+
+.Resume .res-content .card:hover{
+    Transform: scale(1.01);
+    animation: shake 0.5s ease infinite alternate;
+}
+
+.Resume .res-content .card:hover{
+    Background:rgb(40,40,40);
+}
+.Resume .res-content .card:hover i{
+    color: #1adf00;
+    Transform: scale(1.1);
+}
+
+.Resume .card span2{
+    transition: 0.5;
+    opacity: 0;
+    max-width: 100%;
+}
+
+.Resume .card:hover span2{
+    opacity: 1;
+}
+
+.Resume .card{
+    opacity: 0.6;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.Resume .card:hover{
+    opacity: 1;
+}
+
+
+.Resume .card span2:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1adf00);
+    animation: lineanimate1 2s linear infinite;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes lineanimate1{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+
+.Resume .card span2:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #1adf00);
+    animation: lineanimate2 1s linear infinite;
+    animation-delay: 1s;
+    overflow-x: hidden;
+}
+
+@keyframes lineanimate2{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%)
+    }
+}
+
+.Resume .card span2:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1adf00);
+    animation: lineanimate3 2s linear infinite;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes lineanimate3{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+.Resume .card span2:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1adf00);
+    animation: lineanimate4 1s linear infinite;
+    animation-delay: 1s;
+    overflow-x: hidden;
+}
+
+@keyframes lineanimate4{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%)
+    }
+}
+
+
+
+
+
+
+@keyframes wiggle{
+    from {transform: translateX(-5px);}
+    to {transform: translateX(5px);}
+
+    from {transform: translateY(-5px);}
+    to {transform: translateY(5px);}
+}
+
+@keyframes shake{
+    from {transform: translateX(-1px) translateY(1px) rotate(0deg);}
+    to {transform: translateX(1px) translateY(-1px) roatate(20deg);}
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.Contact{
+    background-color: rgb(30, 30, 30);
+    width:100%;
+}
+
+.Contact .con-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(30, 30, 30)
+}
+
+.Contact .title{
+   position: relative;
+    bottom: -60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.Contact .title::before{
+    content: "";
+    position: absolute;
+    bottom : -5px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.Contact .title::after{
+    content: "Contact me";
+    position: absolute;
+    bottom : -20px;
+    left: 50%;
+    font-size: 20px;
+    color: #1adf00;
+    padding: 5px;
+    background-color: rgb(30,30,30);
+    transform: translateX(-50%);
+}
+
+.Contact .text{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom:100px;
+    margin-top: 90px;
+    margin-right:1000px;
+}
+
+.Contact .con-content i{
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left : 80px;
+    color: #1adf00;
+    transition: 0.7s all ease;
+}
+
+
+.Contact:hover .con-content i{
+    transform: scale(1.2);
+    color:#fff;
+
+}
+
+.Contact:hover span{
+    color:#1adf00;
+}
+
+.Contact span{
+    color:#fff;
+    transition: 2s all ease;
+}
